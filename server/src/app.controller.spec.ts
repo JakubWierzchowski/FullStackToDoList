@@ -19,7 +19,7 @@ describe('AppController', () => {
   describe('addTask', () => {
     it('should add a task and return the added task', () => {
       const taskToAdd: Task = { id: 1, title: 'Task 1', completed: false };
-      jest.spyOn(appService, 'addTask').mockReturnValue(taskToAdd); // Mockujemy, że addTask zwraca dodane zadanie
+      jest.spyOn(appService, 'addTask').mockReturnValue(taskToAdd);
 
       const result = appController.addTask(taskToAdd);
 
