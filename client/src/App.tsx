@@ -23,7 +23,7 @@ function App() {
         newTask={newTask}
       />
       {tasks.length === 0 ? (
-        <h2>Nie dodano jeszcze żadnych zadań</h2>
+        <h2>No tasks have been added yet!</h2>
       ) : (
         <TaskResult
           handleRemoveTask={handleRemoveTask}
